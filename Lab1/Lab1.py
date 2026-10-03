@@ -145,3 +145,33 @@ print(f_string[-1]) ## ostatni element od końca
 print(f_string[3:]) ## wypisuje od 3 elementu do końca tablicy
 print(f_string[3:5]) ## wypisuje od 3 elementu do 5
 
+## Pliki
+lines = []
+with open("plik.txt") as f:
+    for line in f:
+        lines.append(line.strip()) # strip usuwa białe znaki
+    print(lines)
+
+
+## Funkcje
+
+silniaLinia = []
+with open("silniaplik.txt") as f:
+    for line in f:
+        silniaLinia.append(int(line.strip()))
+
+def silnia(n):
+    res = 1
+    for x in range(1, n+1):
+        res = res * x
+    return res
+
+print(silnia(5))
+
+for number in silniaLinia:
+    print(silnia(number))
+
+## Wbudowane Funkcje
+from math import gcd
+
+print(gcd(24,46))
