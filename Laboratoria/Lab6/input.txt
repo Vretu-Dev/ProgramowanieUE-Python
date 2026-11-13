@@ -1,0 +1,4 @@
+to jest test
+jeśli pojawi sie
+slowo test
+to linia bedzie dodana

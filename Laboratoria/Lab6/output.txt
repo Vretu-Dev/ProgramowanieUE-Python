@@ -1,0 +1,2 @@
+1: to jest test
+4: to linia bedzie dodana
